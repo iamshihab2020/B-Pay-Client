@@ -5,6 +5,10 @@ module.exports = withMT({
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        customRadial:
+          "radial-gradient(circle, rgba(24, 61, 61, 1) 0%, rgba(92, 131, 116, 1) 50%, rgba(52, 73, 94, 1) 100%)",
+      },
       colors: {
         primary: "#183D3D",
         secondary: "#5C8374",

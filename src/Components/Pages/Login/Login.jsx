@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { Typography, Input, Button } from "@material-tailwind/react";
-import { EyeSlashIcon, EyeIcon } from "@heroicons/react/24/solid";
+import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
+import { Button, Input, Typography } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import SetHelmet from "../../Shared/SetHelmet/SetHelmet";
 
@@ -12,7 +12,7 @@ export function Login() {
   return (
     <>
       <SetHelmet title="Login" />
-      <section className="animate__animated animate__fadeIn grid text-center items-center p-8 w-96 border-2 border-primary rounded-xl shadow-2xl shadow-primary ">
+      <section className="bg-light animate__animated animate__fadeIn grid text-center items-center p-8 w-96 border-2 border-primary rounded-xl shadow-2xl shadow-primary ">
         <div >
           <Typography variant="h3" className="mb-2 text-primary">
             B-Pay
@@ -72,7 +72,7 @@ export function Login() {
                 }
               />
             </div>
-            <Button size="lg" className="mt-6 bg-primary capitalize" fullWidth>
+            <Button size="lg" className="mt-6 bg-primary hover:bg-secondary duration-200 capitalize" fullWidth>
               Login
             </Button>
 
