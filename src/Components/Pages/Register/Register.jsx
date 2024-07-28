@@ -28,7 +28,7 @@ export function Register() {
       const role = "user"; // Set default role to 'user'
 
       const userCredential = {
-        name: names,
+        name: names, // Use 'name' here instead of 'names'
         email,
         pin: password,
         role,
